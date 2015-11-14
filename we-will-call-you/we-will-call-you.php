@@ -122,7 +122,7 @@ function wewillcallyou_ajax_save(){
 	$adata['ip']=$_SERVER['REMOTE_ADDR'];
 	$adata['lang']=$_SERVER['HTTP_ACCEPT_LANGUAGE'];
 	
-	$response=mail($email,'WeWillCallYou Notification',print_r($adata,true));
+	$response=wp_mail($email,'WeWillCallYou Notification',print_r($adata,true));
 	
 	$adata['response']=$response;
 	var_dump($adata);
