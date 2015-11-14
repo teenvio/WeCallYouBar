@@ -62,9 +62,12 @@ function wewillcallyou_admin_page(){
 	$tpl = str_replace('__#teenvio_user#__', __('teenvio_user','wewillcallyou'),$tpl);
 	$tpl = str_replace('__#teenvio_acount#__', __('teenvio_acount','wewillcallyou'),$tpl);
 	$tpl = str_replace('__#teenvio_pass#__', __('teenvio_pass','wewillcallyou'),$tpl);
+	$tpl = str_replace('__#exclude_path#__', __('exclude_path','wewillcallyou'),$tpl);
+	
 	
 	$tpl = str_replace('{value_title}', wewillcallyou_get_option('title'),$tpl);
 	$tpl = str_replace('{value_conditions_url}', wewillcallyou_get_option('conditions_url'),$tpl);
+	$tpl = str_replace('{value_exclude_path}', wewillcallyou_get_option('exclude_path'),$tpl);
 	$tpl = str_replace('{value_action}', wewillcallyou_get_option('action'),$tpl);
 	$tpl = str_replace('{value_email}', wewillcallyou_get_option('email'),$tpl);
 	$tpl = str_replace('{value_teenvio_user}', wewillcallyou_get_option('teenvio_user'),$tpl);
@@ -130,9 +133,31 @@ function wewillcallyou_ajax_save(){
 	
 }
 
-add_action('plugins_loaded','wewillcallyou_init');
-add_action('wp_enqueue_scripts', 'wewillcallyou_add_scripts' );
-add_action('wp_footer', 'wewillcallyou_addhtml');
+function wewillcallyou_is_exclude(){
+	
+	$exclude_path = (string) wewillcallyou_get_option('exclude_path');
+	if ($exclude_path=='') return false;
+	
+	$current=$_SERVER['REQUEST_URI'];
+	$paths=  explode(',', $exclude_path);
+	
+	foreach($paths as $path){
+		if (strpos($current, $path)!==false){
+			return true;
+		}
+	}
+}
+
+
+
+//Front
+if (wewillcallyou_is_exclude()==false){
+	add_action('plugins_loaded','wewillcallyou_init');
+	add_action('wp_enqueue_scripts', 'wewillcallyou_add_scripts' );
+	add_action('wp_footer', 'wewillcallyou_addhtml');
+}
+//Admin
 add_action('admin_menu','wewillcallyou_admin_init');
+//Front ajax
 add_action('wp_ajax_wewillcallyou_ajax_save', 'wewillcallyou_ajax_save' );
 ?>

@@ -48,6 +48,14 @@ var weWillCallYou={
 	
 	save:function(){
 		var error=0;
+		
+		if(jQuery('div#wewillcallyou-bottombar form input[name=acept]')[0].checked==false){
+			error=1;
+			jQuery('div#wewillcallyou-bottombar form input[name=acept]').parent().addClass('error');
+		}else{
+			jQuery('div#wewillcallyou-bottombar form input[name=acept]').parent().removeClass('error');
+		}
+		
 		jQuery('div#wewillcallyou-bottombar form input').each(function(){
 			var objinput=jQuery(this);
 			if (this.value==""){

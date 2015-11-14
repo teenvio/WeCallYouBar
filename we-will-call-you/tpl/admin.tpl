@@ -20,6 +20,14 @@
                                         <input id="title" class="regular-text" type="text" value="{value_conditions_url}" name="conditions_url">
 				</td>
 			</tr>
+                        <tr>
+				<th scope="row">
+					<label for='title'>__#exclude_path#__</label>
+				</th>
+				<td>
+                                        <input id="title" class="regular-text" type="text" value="{value_exclude_path}" name="exclude_path">
+				</td>
+			</tr>
 			<tr>
 				<th scope="row">
 					<label for='title'>__#action#__</label>
