@@ -18,6 +18,10 @@ var weWillCallYou={
 			weWillCallYou.hide();
 		});
 		
+		jQuery('div#wewillcallyou-bottombar input[name=send]').click(function(){
+			weWillCallYou.save();
+		});
+		
 		weWillCallYou.timer=window.setInterval(function(){
 			weWillCallYou.log('WeWillCallYou timer call');
 			weWillCallYou.show();
@@ -39,6 +43,41 @@ var weWillCallYou={
 	log:function(str){
 		if (console && console.log){
 			console.log(str);
+		}
+	},
+	
+	save:function(){
+		var error=0;
+		jQuery('div#wewillcallyou-bottombar form input').each(function(){
+			var objinput=jQuery(this);
+			if (this.value==""){
+				objinput.addClass('error');
+				error=1;
+			}else{
+				
+				if (objinput.hasClass('email') && this.value.trim().match(/^[\w-_.]{1,}@[\w-_.]{1,}(\.\w{2,})+$/)==null){
+					objinput.addClass('error');
+					error=1;
+				}else{
+					objinput.removeClass('error');
+				}
+			}
+			
+		});
+		
+		if (error==0){
+			var form=jQuery('div#wewillcallyou-bottombar form');
+			var data=form.serialize();
+			weWillCallYou.log(data);
+
+			jQuery.post(wewillcallyouAjax.ajaxurl, data, function(response) {
+			
+				form.hide();
+				jQuery('div#wewillcallyou-bottombar div.send-ok').show();
+				
+			});
+
+			
 		}
 	}
 };
