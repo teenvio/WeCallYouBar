@@ -160,4 +160,5 @@ if (wewillcallyou_is_exclude()==false){
 add_action('admin_menu','wewillcallyou_admin_init');
 //Front ajax
 add_action('wp_ajax_wewillcallyou_ajax_save', 'wewillcallyou_ajax_save' );
+add_action('wp_ajax_nopriv_wewillcallyou_ajax_save', 'wewillcallyou_ajax_save' );
 ?>

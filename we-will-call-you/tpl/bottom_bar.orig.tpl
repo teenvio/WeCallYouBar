@@ -1,6 +1,4 @@
 <style type="text/css">
-
-
 	div#wewillcallyou-bottombar{
 		font-family: "Helvetica Neue","Liberation Sans",Helvetica,Arial,sans-serif;
                 font-size:12px;
@@ -14,8 +12,7 @@
 		right: 0;
 		width: 300px;
 		transition: all 0.3s ease-out 0s;
-		z-index:999;
-		text-align: center;
+                z-index:999;
 	}
         
         div#wewillcallyou-bottombar span.show-button{cursor:pointer;font-weight:bold;}
@@ -23,7 +20,7 @@
         div#wewillcallyou-bottombar div.wewillcallyou-top{
                 height: 32px;
                 font-size: 19px;
-                margin-bottom: 0;
+                margin-bottom: 10px;
                 padding: 7px;
         }
         
@@ -39,21 +36,19 @@
                 color:#333;
         }
         div#wewillcallyou-bottombar input[type=button]{
-                background: #387599 none repeat scroll 0 0;
-				color: #fff;
-				margin-top: 12px;
+                background:#333;
+                color:#fff;
         }
         div#wewillcallyou-bottombar input[type=checkbox]{
                 margin:0;
-                paddin:0;
+                padding:0;
         }
 	div#wewillcallyou-bottombar input[type=text],div#wewillcallyou-bottombar input[type=button]{
-		display: inline-block;
-		font-size: 16px;
-		line-height: 20px;
-		margin-bottom: 10px;
-		padding: 10px;
-		width: 90%;
+		display:inline-block;
+		width:100%;
+                line-height: 26px;
+                padding:8px;
+                font-size: 19px;
 	}
         div#wewillcallyou-bottombar .error{
                 border:2px solid red !important;

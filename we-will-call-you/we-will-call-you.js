@@ -14,6 +14,11 @@ var weWillCallYou={
 		jQuery('div#wewillcallyou-bottombar').mouseenter(function(){
 			weWillCallYou.show();
 		});
+		
+		jQuery('div#wewillcallyou-bottombar .wewillcallyou-top span:eq(0)').click(function(){
+			weWillCallYou.show();
+		});
+		
 		jQuery('div#wewillcallyou-bottombar .show-button').click(function(){
 			weWillCallYou.hide();
 		});
@@ -25,7 +30,7 @@ var weWillCallYou={
 		weWillCallYou.timer=window.setInterval(function(){
 			weWillCallYou.log('WeWillCallYou timer call');
 			weWillCallYou.show();
-		},30*1000);
+		},15*1000);
 	},
 	
 	show:function(){
@@ -35,7 +40,7 @@ var weWillCallYou={
 	
 	hide:function(){
 		jQuery('div#wewillcallyou-bottombar .show-button').html('^');
-		jQuery('div#wewillcallyou-bottombar').css('bottom','-260px');
+		jQuery('div#wewillcallyou-bottombar').css('bottom','-290px');
 		window.clearInterval(weWillCallYou.timer);
 		weWillCallYou.log('WeWillCallYou timer canceled');
 	},
