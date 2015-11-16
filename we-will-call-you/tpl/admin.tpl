@@ -28,7 +28,7 @@
                                         <input id="title" class="regular-text" type="text" value="{value_exclude_path}" name="exclude_path">
 				</td>
 			</tr>
-			<tr>
+			<!-- <tr>
 				<th scope="row">
 					<label for='title'>__#action#__</label>
 				</th>
@@ -39,7 +39,7 @@
 						<option value="send-email-save-app">__#send-email-save-app#__</option>
 					</select>
 				</td>
-			</tr>
+			</tr>-->
                         <tr>
 				<th scope="row">
 					<label for='title'>__#email_alert#__</label>
@@ -48,6 +48,7 @@
                                         <input id="title" class="regular-text" type="text" value="{value_email}" name="email">
 				</td>
 			</tr>
+                        <!-- 
                         <tr>
 				<th scope="row">
 					<label for='title'>__#teenvio_user#__</label>
@@ -72,6 +73,7 @@
                                         <input id="title" class="regular-text" type="password" value="{value_teenvio_pass}" name="teenvio_pass">
 				</td>
 			</tr>
+                        -->
 		</table>
 	
                 <p class="submit">
