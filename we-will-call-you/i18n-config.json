@@ -1,0 +1,15 @@
+{"vendor":{"plugins/we-will-call-you-acb":"1.0"},
+"admin-config":{
+"wewillcallyou":{
+	"pages": { "options-general.php": "page=wewillcallyou" },
+	"forms": {
+		"wewillcallyou_form": {
+			"fields": {
+				"title": [],
+				"thanks_message": []
+			}
+		}
+	}
+}
+}
+}
