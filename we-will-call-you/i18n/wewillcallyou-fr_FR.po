@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: we-will-call-you\n"
 "POT-Creation-Date: 2015-11-14 18:00+0100\n"
-"PO-Revision-Date: 2017-05-18 09:15+0200\n"
+"PO-Revision-Date: 2017-09-18 17:50+0200\n"
 "Last-Translator: Víctor J. Chamorro <victor@ipdea.com>\n"
 "Language-Team: info@teenvio.com\n"
 "MIME-Version: 1.0\n"
@@ -18,39 +18,39 @@ msgstr ""
 
 #: ../we-will-call-you/we-will-call-you.php:23
 msgid "name"
-msgstr "Name"
+msgstr "Prénom"
 
 #: ../we-will-call-you/we-will-call-you.php:24
 msgid "email"
-msgstr "Email"
+msgstr "Adresse e-mail"
 
 #: ../we-will-call-you/we-will-call-you.php:25
 msgid "phone"
-msgstr "Phone"
+msgstr "Téléphone"
 
 #: ../we-will-call-you/we-will-call-you.php:26
 msgid "send"
-msgstr "Send"
+msgstr "Envoyer"
 
 #: ../we-will-call-you/we-will-call-you.php:29
 msgid "conditions"
-msgstr "Privacy Policy"
+msgstr "Politique de Confidentialité"
 
 #: ../we-will-call-you/we-will-call-you.php:30
 msgid "acept the"
-msgstr "Accept the"
+msgstr "J'accepte la"
 
 #: ../we-will-call-you/we-will-call-you.php:31
 msgid "send_thanks"
-msgstr "We will get in touch as soon as possible. (Calls from 8:30 to 18:30 CET)"
+msgstr "Vous serez contacté par nos services le plus tot possible (Appels de 8:30 a 18:30)"
 
 #: ../we-will-call-you/we-will-call-you.php:54
 msgid "save"
-msgstr "Save"
+msgstr "Sauvegarder"
 
 #: ../we-will-call-you/we-will-call-you.php:55
 msgid "title"
-msgstr "Title"
+msgstr "Titre"
 
 #: ../we-will-call-you/we-will-call-you.php:56
 msgid "action"
@@ -58,7 +58,7 @@ msgstr "Action"
 
 #: ../we-will-call-you/we-will-call-you.php:57
 msgid "send email"
-msgstr "Email address for notifications"
+msgstr "Adresse e-mail pour les notifications"
 
 #: ../we-will-call-you/we-will-call-you.php:58
 msgid "save into external app"
@@ -70,15 +70,15 @@ msgstr ""
 
 #: ../we-will-call-you/we-will-call-you.php:60
 msgid "conditions_url"
-msgstr "Privacy Policy URL"
+msgstr "URL Politique de Confidentialité"
 
 #: ../we-will-call-you/we-will-call-you.php:61
 msgid "email_alert"
-msgstr "Email address for notifications"
+msgstr "Adresse e-mail pour les notifications"
 
 #: ../we-will-call-you/we-will-call-you.php:62
 msgid "thanks_message"
-msgstr "Thanks message"
+msgstr "Message de remerciement"
 
 #: ../we-will-call-you/we-will-call-you.php:62
 msgid "teenvio_user"
@@ -94,4 +94,4 @@ msgstr ""
 
 #: ../we-will-call-you/we-will-call-you.php:65
 msgid "exclude_path"
-msgstr "Excluded URLs"
+msgstr "URL exclues"
