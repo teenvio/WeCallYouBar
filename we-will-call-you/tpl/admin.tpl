@@ -1,34 +1,43 @@
 <div class="wrap">
 	<h1>We'll Call You Options</h1>
-	
-	<form novalidate='novalidate' method='post'>
-                <input type="hidden" name="form-action" value="save">
+
+	<form id='wewillcallyou_form' novalidate='novalidate' method='post'>
+		<input type="hidden" name="form-action" value="save">
 		<table class="form-table">
 			<tr>
 				<th scope="row">
 					<label for='title'>__#title#__</label>
 				</th>
 				<td>
-                                        <input id="title" class="regular-text" type="text" value="{value_title}" name="title">
+					<input id="title" class="regular-text" type="text" value="{value_title}" name="title">
 				</td>
 			</tr>
-                        <tr>
+			<tr>
 				<th scope="row">
-					<label for='title'>__#conditions_url#__</label>
+					<label for='thanks_message'>__#thanks_message#__</label>
 				</th>
 				<td>
-                                        <input id="title" class="regular-text" type="text" value="{value_conditions_url}" name="conditions_url">
+					<input id="thanks_message" class="regular-text" type="text" value="{value_thanks_message}" name="thanks_message">
 				</td>
 			</tr>
-                        <tr>
+			<tr>
 				<th scope="row">
-					<label for='title'>__#exclude_path#__</label>
+					<label for='conditions'>__#conditions_url#__</label>
 				</th>
 				<td>
-                                        <input id="title" class="regular-text" type="text" value="{value_exclude_path}" name="exclude_path">
+					<input id="conditions" class="regular-text" type="text" value="{value_conditions_url}" name="conditions_url">
 				</td>
 			</tr>
-			<!-- <tr>
+			<tr>
+				<th scope="row">
+					<label for='exclusions'>__#exclude_path#__</label>
+				</th>
+				<td>
+					<input id="exclusions" class="regular-text" type="text" value="{value_exclude_path}" name="exclude_path">
+				</td>
+			</tr>
+			<!--
+			<tr>
 				<th scope="row">
 					<label for='title'>__#action#__</label>
 				</th>
@@ -40,51 +49,51 @@
 					</select>
 				</td>
 			</tr>-->
-                        <tr>
+			<tr>
 				<th scope="row">
-					<label for='title'>__#email_alert#__</label>
+					<label for='email'>__#email_alert#__</label>
 				</th>
 				<td>
-                                        <input id="title" class="regular-text" type="text" value="{value_email}" name="email">
+					<input id="email" class="regular-text" type="text" value="{value_email}" name="email">
 				</td>
 			</tr>
-                        <!-- 
-                        <tr>
+
+			<!--
+			<tr>
 				<th scope="row">
 					<label for='title'>__#teenvio_user#__</label>
 				</th>
 				<td>
-                                        <input id="title" class="regular-text" type="text" value="{value_teenvio_user}" name="teenvio_user">
+					<input id="title" class="regular-text" type="text" value="{value_teenvio_user}" name="teenvio_user">
 				</td>
 			</tr>
-                        <tr>
+			<tr>
 				<th scope="row">
 					<label for='title'>__#teenvio_acount#__</label>
 				</th>
 				<td>
-                                        <input id="title" class="regular-text" type="text" value="{value_teenvio_plan}" name="teenvio_plan">
+					<input id="title" class="regular-text" type="text" value="{value_teenvio_plan}" name="teenvio_plan">
 				</td>
 			</tr>
-                        <tr>
+			<tr>
 				<th scope="row">
 					<label for='title'>__#teenvio_pass#__</label>
 				</th>
 				<td>
-                                        <input id="title" class="regular-text" type="password" value="{value_teenvio_pass}" name="teenvio_pass">
+					<input id="title" class="regular-text" type="password" value="{value_teenvio_pass}" name="teenvio_pass">
 				</td>
-			</tr>
-                        -->
+			</tr>-->
 		</table>
-	
-                <p class="submit">
-                        <input type="submit" value="__#save#__" class="button button-primary" id="submit" name="submit">
-                </p>
-        </form>
+		
+		<p class="submit">
+			<input type="submit" value="__#save#__" class="button button-primary" id="submit" name="submit">
+		</p>
+	</form>
 </div>
 <script type="text/javascript">
-        if (jQuery){
-                jQuery(document).ready(function(){
-                        jQuery('select[name=action]').val('{value_action}');
-                });
-        }
+if (jQuery){
+	jQuery(document).ready(function(){
+		jQuery('select[name=action]').val('{value_action}');
+	});
+}
 </script>
