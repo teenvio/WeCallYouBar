@@ -2,9 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: we-will-call-you\n"
 "POT-Creation-Date: 2015-11-14 18:00+0100\n"
-"PO-Revision-Date: 2017-05-18 09:15+0200\n"
-"Last-Translator: Víctor J. Chamorro <victor@ipdea.com>\n"
+"PO-Revision-Date: 2017-09-18 17:58+0200\n"
+"Last-Translator: WEDO creatives\n"
 "Language-Team: info@teenvio.com\n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,24 +14,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;__#\n"
-"Language: en_US\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../we-will-call-you/we-will-call-you.php:23
 msgid "name"
-msgstr "Name"
+msgstr "Nome"
 
 #: ../we-will-call-you/we-will-call-you.php:24
 msgid "email"
-msgstr "Email"
+msgstr "E-mail"
 
 #: ../we-will-call-you/we-will-call-you.php:25
 msgid "phone"
-msgstr "Phone"
+msgstr "Telefono"
 
 #: ../we-will-call-you/we-will-call-you.php:26
 msgid "send"
-msgstr "Send"
+msgstr "Inviare"
 
 #: ../we-will-call-you/we-will-call-you.php:29
 msgid "conditions"
@@ -38,60 +38,62 @@ msgstr "Privacy Policy"
 
 #: ../we-will-call-you/we-will-call-you.php:30
 msgid "acept the"
-msgstr "Accept the"
+msgstr "Accetto la"
 
 #: ../we-will-call-you/we-will-call-you.php:31
 msgid "send_thanks"
-msgstr "We will get in touch as soon as possible. (Calls from 8:30 to 18:30 CET)"
+msgstr ""
+"Vi contatteremo al più presto. (Chiamate di 8:30 a 18:30h "
+"CET)"
 
 #: ../we-will-call-you/we-will-call-you.php:54
 msgid "save"
-msgstr "Save"
+msgstr "Salvare"
 
 #: ../we-will-call-you/we-will-call-you.php:55
 msgid "title"
-msgstr "Title"
+msgstr "Titolo"
 
 #: ../we-will-call-you/we-will-call-you.php:56
 msgid "action"
-msgstr "Action"
+msgstr "Azione"
 
 #: ../we-will-call-you/we-will-call-you.php:57
 msgid "send email"
-msgstr "Email address for notifications"
+msgstr "Invia per E-mail"
 
 #: ../we-will-call-you/we-will-call-you.php:58
 msgid "save into external app"
-msgstr ""
+msgstr "Salva in applicazione esterna"
 
 #: ../we-will-call-you/we-will-call-you.php:59
 msgid "send email and save into external app"
-msgstr ""
+msgstr "Invia per E-mail e salva in applicazione esterna"
 
 #: ../we-will-call-you/we-will-call-you.php:60
 msgid "conditions_url"
-msgstr "Privacy Policy URL"
+msgstr "URL della Privacy Policy"
 
 #: ../we-will-call-you/we-will-call-you.php:61
 msgid "email_alert"
-msgstr "Email address for notifications"
+msgstr "Indirizzo e-mail per le comunicazioni"
 
 #: ../we-will-call-you/we-will-call-you.php:62
 msgid "thanks_message"
-msgstr "Thanks message"
+msgstr "Messaggio di ringraziamento"
 
 #: ../we-will-call-you/we-will-call-you.php:62
 msgid "teenvio_user"
-msgstr ""
+msgstr "teenvio - utente"
 
 #: ../we-will-call-you/we-will-call-you.php:63
 msgid "teenvio_acount"
-msgstr ""
+msgstr "teenvio - Conto/nome del piano"
 
 #: ../we-will-call-you/we-will-call-you.php:64
 msgid "teenvio_pass"
-msgstr ""
+msgstr "teenvio - Password"
 
 #: ../we-will-call-you/we-will-call-you.php:65
 msgid "exclude_path"
-msgstr "Excluded URLs"
+msgstr "URL escluse"
